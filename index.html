@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Meta SEO untuk Vercel -->
     <meta name="description" content="Toko Online WhatsApp Terpercaya">
-    <title>klikToko WA Online Store</title>
+    <title>WhatsApp Online Store</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -138,7 +138,7 @@
                 </div>
             </div>
             <footer class="bg-gray-900 text-center py-6 text-xs text-gray-400 font-medium">
-                <p>Copyright &copy; <span id="current-year"></span> <span class="text-white">klikTokoku</span></p>
+                <p>Copyright &copy; <span id="current-year"></span> <span class="text-white">Toko WA</span></p>
                 <p class="mt-1 opacity-70">Powered by klikSistem.com</p>
             </footer>
         </div>
@@ -324,7 +324,19 @@
                         <input type="number" id="inp-prod-stock" class="flex-1 border p-2.5 rounded-lg text-sm bg-gray-50 font-medium" placeholder="Stok">
                     </div>
                     <input type="text" id="inp-prod-cat" class="w-full border p-2.5 rounded-lg text-sm bg-gray-50 font-medium" placeholder="Kategori">
-                    <input type="text" id="inp-prod-img" class="w-full border p-2.5 rounded-lg text-xs bg-gray-50 font-medium" placeholder="URL Gambar">
+                    
+                    <!-- BUNGKUSAN BARU UNTUK INPUT GAMBAR & TUTORIAL -->
+                    <div>
+                        <input type="text" id="inp-prod-img" class="w-full border p-2.5 rounded-lg text-xs bg-gray-50 font-medium" placeholder="URL Gambar">
+                        <div class="mt-2 p-2.5 bg-blue-50 border border-blue-100 rounded-lg flex gap-2 items-start">
+                            <i class="fa-solid fa-lightbulb text-blue-500 mt-0.5"></i>
+                            <p class="text-[10px] text-gray-600 leading-relaxed">
+                                <b>Tips Upload Gambar:</b> Buka <a href="https://id.imgbb.com/" target="_blank" class="text-blue-600 font-bold underline hover:text-blue-700">ImgBB.com</a>, unggah foto, ubah opsi menjadi <b>"Tautan Langsung"</b>, lalu Copy & Paste link panjangnya ke atas.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- AKHIR BUNGKUSAN BARU -->
+
                     <textarea id="inp-prod-desc" class="w-full border p-2.5 rounded-lg text-sm bg-gray-50 font-medium resize-none" rows="3" placeholder="Deskripsi"></textarea>
                     <div class="flex items-center mt-1">
                         <input type="checkbox" id="inp-prod-feat" class="w-4 h-4 mr-2">
@@ -364,7 +376,7 @@
         // PERHATIAN: ISI VARIABEL INI DENGAN URL GOOGLE APPS SCRIPT ANDA
         // Jika dibiarkan kosong, aplikasi otomatis beralih ke Mode Simulasi.
         // ======================================================================
-        const GAS_URL = "https://script.google.com/macros/s/AKfycbwvmRo90qGsW-eZWdHmPAqo4ujMLhDXui91iJnNRaJwd2lZKXoX0oris5StOHGT0ySnCg/exec"; 
+        const GAS_URL = ""; 
         
         let db = { config: {}, categories: [], products: [], blogs: [] };
         let cart = [];
